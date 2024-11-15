@@ -11,7 +11,7 @@ body {
 #main-container {
     height: 100%;
     display: grid;
-    grid-template: max(200px) 1fr / max(200px) 1fr;
+    grid-template: max(150px) 1fr / max(200px) 1fr;
 }
 
 #main-container > div {
@@ -19,7 +19,7 @@ body {
 }
 
 .icon {
-    max-height: 1.50rem;
+    height: 1.50rem;
     margin-right: 10px;
 }
 
@@ -68,9 +68,58 @@ body {
 
 #header {
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 1fr;
+    grid-template-columns: 1fr 30%;
+    gap: 20px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    background-color: #e0f2fe;
+    font-size: 1.25rem;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#introduction {
+    display: grid;
+    grid-template: 1rem 1fr / 75px 1fr;
+    font-weight: 800;
+}
+
+.profile-image  {
+    grid-row: 1 / 3;
+    object-fit: cover;
+    border-radius: 50px;;
+}
+
+#greetings {
+    grid-column: 2;
+    font-size: 1rem;
+}
+
+#user-name {
+    grid-column: 2;
+    font-size: 1.5rem;
+}
+
+#header-btn {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px,1fr));
+    gap: 20px;
+}
+#header-btn * {
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 30px;
 }
 
 #main-content {
-    background-color: #e5e5e5;
+    background-color: #e0f2fe;
 }
